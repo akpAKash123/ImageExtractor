@@ -1,6 +1,20 @@
 import java.util.Scanner;
 public class Main{
+    int a = 0;
+    int b = 0;
+    private int addTwoNumber(int a, int b){
+        this.a = a;
+        this.b = b;
+        return a+b;
+    }
     public static void main(String args[]){
-        System.debug('This is the java template');
+        System.out.println('This is the java Addition Program');
+        Main obj = new Main();
+        int result = obj.addTwoNumber(40,70);
+        if(result == 110){
+            Sytem.out.println('Oye this is the right answer');
+        }else{
+            System.out.println('Opps ! this is wrong answer..?');
+        } 
     }
 }
